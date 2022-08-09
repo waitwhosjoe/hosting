@@ -1,0 +1,24 @@
+<body>
+    <div id="button">
+      
+      <button id="fullscreen-button" type="button"> <img src="https://i.ibb.co/LCWmKD3/FULLSCREEN.png" height ="40" width="40" /></button>
+      
+      </div>
+    
+    <div id="fullscreen">
+        <iframe id="fullscreen" src= "https://yandex.com/games/app/96910?app-id=96910#&origin=https%3A%2F%2Fyandex.com&yandexapp=false&expBoxesCrypted=yzYOG3Bh5uuMB3_rGc29UA%2C%2C&experiments=%7B%22invalidate_games_cache_from%22%3A10426921%2C%22homeland_currency_basket%22%3Atrue%2C%22azure_mirror%22%3A%22all%22%2C%22feed_pagination%22%3Atrue%2C%22united_page_without_i%22%3Atrue%2C%22united_page%22%3Atrue%2C%22recovery_code%22%3Atrue%2C%22merge_conflicts%22%3Atrue%2C%22payments_igames%22%3Atrue%2C%22new_unauthorized_cookie%22%3Atrue%2C%22update_excluded_categories%22%3Atrue%2C%22categories_to_exclude%22%3A%5B205%5D%2C%22dj_experiment_param%22%3A%228%22%2C%22send_shown_game_cards%22%3Atrue%2C%22promo_waterfall%22%3Atrue%7D&app-id=96910"
+         frameborder="0" allowfullscreen="true" overflow="visible" width="100%vw" height="100%vh" frameborder="0"></iframe>
+    </div>
+    
+        <script>
+      var fullscreenButton = document.getElementById("fullscreen-button");
+      var fullscreenDiv = document.getElementById("fullscreen");
+      var fullscreenFunc = fullscreenDiv.requestFullscreen;
+      
+        function enterFullscreen() {
+          fullscreenFunc.call(fullscreenDiv);
+        }
+      
+        fullscreenButton.addEventListener('click', enterFullscreen);
+        </script>
+    </body> 
